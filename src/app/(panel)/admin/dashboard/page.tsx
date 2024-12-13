@@ -3,7 +3,7 @@ import InfoCard from "@/components/layout/panel/InfoCard";
 const DashboardPage = () => {
     return (<div className={'p-4 flex flex-col gap-4 md:flex-row'}>
         {/*LEFT*/}
-        <div className={'w-full lg:w-2/3 bg-yellow-100'}>
+        <div className={'w-full lg:w-2/3'}>
             {/*InfoCard*/}
             <div className={'flex justify-between gap-4 flex-wrap'}>
                 <InfoCard type={'Data 1'}/>
