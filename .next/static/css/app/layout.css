@@ -628,6 +628,24 @@ video {
 .h-\[500px\] {
   height: 500px;
 }
+.h-\[800px\] {
+  height: 800px;
+}
+.h-\[700px\] {
+  height: 700px;
+}
+.h-\[600px\] {
+  height: 600px;
+}
+.h-\[680px\] {
+  height: 680px;
+}
+.h-\[678px\] {
+  height: 678px;
+}
+.h-\[670px\] {
+  height: 670px;
+}
 .min-h-\[5\%\] {
   min-height: 5%;
 }
@@ -778,6 +796,14 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .pl-3 {
   padding-left: 0.75rem;
