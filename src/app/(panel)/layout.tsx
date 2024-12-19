@@ -1,11 +1,14 @@
 import Navbar from "@/components/layout/panel/Navbar";
 import SideBar from "@/components/layout/panel/SideBar";
 import Footer from "@/components/layout/panel/Footer";
+import * as React from "react";
+import {NextUIProvider} from "@nextui-org/system";
 
 export default function PanelLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
+        <NextUIProvider>
             <div className={'h-screen flex'}>
                 {/*Sidebar*/}
                 <SideBar/>
@@ -18,5 +21,6 @@ export default function PanelLayout({children,}: Readonly<{
                     <Footer/>
                 </div>
             </div>
+        </NextUIProvider>
     );
 }

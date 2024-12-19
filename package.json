@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "chart.js": "^4.4.7",
+    "@nextui-org/card": "^2.2.7",
+    "@nextui-org/divider": "^2.0.28",
+    "@nextui-org/dropdown": "^2.3.7",
+    "@nextui-org/react": "^2.3.0",
+    "@tabler/icons-react": "^3.26.0",
+    "framer-motion": "^11.0.14",
     "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-chartjs-2": "^5.2.0",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "nextui-cli": "^0.5.0",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
