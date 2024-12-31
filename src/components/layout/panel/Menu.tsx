@@ -1,18 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
+import { IconHome, IconAddressBook, IconUser, IconSettings, IconLogout } from '@tabler/icons-react';
 
 const menuItems = [
   {
     title: "MENU",
     items: [
       {
-        icon: "/home.png",
+        icon: IconHome,
         label: "Home",
         href: "/admin/dashboard",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
-        icon: "/student.png",
+        icon: IconAddressBook,
         label: "Contact",
         href: "/admin/contact",
         visible: ["admin", "teacher"],
@@ -23,19 +24,19 @@ const menuItems = [
     title: "OTHER",
     items: [
       {
-        icon: "/profile.png",
+        icon: IconUser,
         label: "Profile",
         href: "/profile",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
-        icon: "/setting.png",
+        icon: IconSettings,
         label: "Settings",
         href: "/settings",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
-        icon: "/logout.png",
+        icon: IconLogout,
         label: "Logout",
         href: "/logout",
         visible: ["admin", "teacher", "student", "parent"],
@@ -50,7 +51,7 @@ const Menu = () => {
     {menuItems.map((item) => (<div className={'flex flex-col gap-2'} key={item.title}>
       <span className={'hidden lg:block text-gray-400 font-light my-4'}>{item.title}</span>
       {item.items.map(subitem=>(<Link className={'flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2'} href={subitem.href} key={subitem.label}>
-        <Image src={subitem.icon} alt={''} width={20} height={20} />
+        <subitem.icon stroke={2} />
         <span className={'hidden lg:block'}>{subitem.label}</span>
       </Link>))}</div>))}
   </div>);
