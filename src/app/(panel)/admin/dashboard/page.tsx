@@ -1,7 +1,9 @@
+"use client";
 import InfoCard from "@/components/layout/panel/InfoCard";
 import React from "react";
 import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
 import Image from "next/image";
+import {useSession} from "next-auth/react";
 
 const DashboardPage = () => {
     return (<div className={'p-4 flex flex-col gap-4 md:flex-row'}>
